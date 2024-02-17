@@ -8,6 +8,9 @@ import joblib
 from .settings import BASE_PATH
 import os
 
+import nltk
+nltk.download('popular')
+
 stop_words = set(stopwords.words('english'))
 stemmer = PorterStemmer()
 
